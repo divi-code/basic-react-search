@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import SearchInput from './components/SearchInput';
 import AddPanel from './components/AddPanel';
 import UpdatePanel from './components/UpdatePanel';
@@ -8,7 +9,7 @@ function App() {
   const [results, setResults] = useState([]);
 
   return (
-    <div>
+    <div className="container">
       <h1>Search Platform</h1>
       <SearchInput setResults={setResults} />
       <AddPanel />
