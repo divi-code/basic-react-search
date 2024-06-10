@@ -10,10 +10,15 @@ const AddPanel = () => {
   };
 
   return (
-    <div>
-      <input type="text" value={entry} onChange={(e) => setEntry(e.target.value)} />
-      <button onClick={handleAdd}>Add</button>
-    </div>
+    <form onSubmit={(e) => { e.preventDefault(); handleAdd(); }}>
+      <input
+        type="text"
+        value={entry}
+        onChange={(e) => setEntry(e.target.value)}
+        placeholder="Add a new entry"
+      />
+      <button type="submit">Add</button>
+    </form>
   );
 };
 

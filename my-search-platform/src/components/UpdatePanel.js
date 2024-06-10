@@ -12,11 +12,21 @@ const UpdatePanel = () => {
   };
 
   return (
-    <div>
-      <input type="number" value={index} onChange={(e) => setIndex(e.target.value)} />
-      <input type="text" value={newEntry} onChange={(e) => setNewEntry(e.target.value)} />
-      <button onClick={handleUpdate}>Update</button>
-    </div>
+    <form onSubmit={(e) => { e.preventDefault(); handleUpdate(); }}>
+      <input
+        type="number"
+        value={index}
+        onChange={(e) => setIndex(e.target.value)}
+        placeholder="Index"
+      />
+      <input
+        type="text"
+        value={newEntry}
+        onChange={(e) => setNewEntry(e.target.value)}
+        placeholder="New entry"
+      />
+      <button type="submit">Update</button>
+    </form>
   );
 };
 
