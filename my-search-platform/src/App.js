@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchInput from './components/SearcInput';
+import SearchInput from './components/SearchInput';
 import AddPanel from './components/AddPanel';
 import UpdatePanel from './components/UpdatePanel';
 import SearchResult from './components/SearchResult';
