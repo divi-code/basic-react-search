@@ -12,20 +12,33 @@ const UpdatePanel = () => {
   };
 
   return (
-    <form onSubmit={(e) => { e.preventDefault(); handleUpdate(); }}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleUpdate();
+      }}
+      className="flex flex-col space-y-2 mb-4"
+    >
       <input
         type="number"
         value={index}
         onChange={(e) => setIndex(e.target.value)}
-        placeholder="Update details"
+        placeholder="Index"
+        className="p-2 border rounded-md"
       />
       <input
         type="text"
         value={newEntry}
         onChange={(e) => setNewEntry(e.target.value)}
-        placeholder="New Details"
+        placeholder="New entry"
+        className="p-2 border rounded-md"
       />
-      <button type="submit">Update</button>
+      <button
+        type="submit"
+        className="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+      >
+        Update
+      </button>
     </form>
   );
 };

@@ -9,8 +9,8 @@ function App() {
   const [results, setResults] = useState([]);
 
   return (
-    <div className="container">
-      <h1>Search Platform</h1>
+    <div className="container mx-auto p-4 bg-white shadow-md rounded-lg">
+      <h1 className="text-2xl font-bold text-center mb-4">Search Platform</h1>
       <SearchInput setResults={setResults} />
       <AddPanel />
       <UpdatePanel />
