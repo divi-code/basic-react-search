@@ -10,10 +10,15 @@ const SearchInput = ({ setResults }) => {
   };
 
   return (
-    <div>
-      <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
-      <button onClick={handleSearch}>Search</button>
-    </div>
+    <form onSubmit={(e) => { e.preventDefault(); handleSearch(); }}>
+      <input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search query"
+      />
+      <button type="submit">Search</button>
+    </form>
   );
 };
 
