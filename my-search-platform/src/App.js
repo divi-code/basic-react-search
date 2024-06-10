@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SearchInput from './components/SearchInput';
 import AddPanel from './components/AddPanel';
 import UpdatePanel from './components/UpdatePanel';
-import SearchResult from './components/SearchResult';
+import SearchResult from './components/SearchResults';
 
 function App() {
   const [results, setResults] = useState([]);
