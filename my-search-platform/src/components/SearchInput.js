@@ -10,26 +10,14 @@ const SearchInput = ({ setResults }) => {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleSearch();
-      }}
-      className="flex flex-col space-y-2 mb-4"
-    >
+    <form onSubmit={(e) => { e.preventDefault(); handleSearch(); }}>
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search query"
-        className="p-2 border rounded-md"
+        placeholder="Input your search"
       />
-      <button
-        type="submit"
-        className="p-2 bg-purple-500 text-white rounded-md hover:bg-purple-600"
-      >
-        Search
-      </button>
+      <button type="submit">Search</button>
     </form>
   );
 };
