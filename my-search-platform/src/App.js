@@ -9,7 +9,7 @@ function App() {
   const [results, setResults] = useState([]);
 
   return (
-    <div>
+    <div className="container">
       <h1>Search Platform</h1>
       <SearchInput setResults={setResults} />
       <AddPanel />

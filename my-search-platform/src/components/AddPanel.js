@@ -21,5 +21,4 @@ const AddPanel = () => {
     </form>
   );
 };
-
 export default AddPanel;
