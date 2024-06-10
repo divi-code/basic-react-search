@@ -15,7 +15,7 @@ const AddPanel = () => {
         type="text"
         value={entry}
         onChange={(e) => setEntry(e.target.value)}
-        placeholder="Add a new entry"
+        placeholder="Add anything"
       />
       <button type="submit">Add</button>
     </form>

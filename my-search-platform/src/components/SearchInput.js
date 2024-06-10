@@ -15,7 +15,7 @@ const SearchInput = ({ setResults }) => {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search query"
+        placeholder="input your search"
       />
       <button type="submit">Search</button>
     </form>

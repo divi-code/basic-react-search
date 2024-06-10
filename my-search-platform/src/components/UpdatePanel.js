@@ -17,13 +17,13 @@ const UpdatePanel = () => {
         type="number"
         value={index}
         onChange={(e) => setIndex(e.target.value)}
-        placeholder="Index"
+        placeholder="Update details"
       />
       <input
         type="text"
         value={newEntry}
         onChange={(e) => setNewEntry(e.target.value)}
-        placeholder="New entry"
+        placeholder="New Details"
       />
       <button type="submit">Update</button>
     </form>
