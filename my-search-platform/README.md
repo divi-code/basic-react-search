@@ -1,22 +1,49 @@
-A basic search platform
+# A basic search platform
 
-Develop a simple database that you can add, read, update, and delete from. This database will serve as your search database. So it means that anytime you search, you are to return the search result from the database. The search results you return must match the search query.
+This is a basic React application that allows users to perform searches, add new entries, and update existing entries in an in-memory database. The platform is better styled using Tailwind CSS for a clean and modern look.
 
-Tasks:
+## Features
 
-Ability to add to the search database
-Ability to update the search database
-Return an empty message if there is no search result.
+Search Functionality: Search through the database using the search bar.
+Add Entries: Add new entries to the database.
+Update Entries: Update existing entries by specifying the index and new value.
 
-Features:
+To get started with the My Search Platform, follow these steps:
+## Installation
 
-A search input for the search query.
-A panel to add to the database
-A panel to update the database
-A panel to show the search results.
+To get started with the My Search Platform, follow these steps:
 
-NOTE:
+1. **Clone the Repository**:
 
-Include a detailed README that explains how to use the search platform
-Using TypeScript or React.JS is a plus
+   ```bash
+   git clone [https://github.com/divi-code/basic-react-search.git](https://github.com/divi-code/basic-react-search)
+   cd my-search-platform
+   
+2. **Install Dependencies**:
+   Ensure you have Node.js and npm installed. Then, run:
+   ```bash
+   npm install
+  3. **Start Developemt Server**
+     ```bash
+     npm start
+   The application will be available at `http://localhost:3000.`
+   
+## Usage
 
+## Search
+1. Open the application in your browser.
+2. Use the search bar to enter your search query.
+3. The results will be displayed below the search bar.
+   
+## Add a New Entry
+
+1. Enter the new entry text in the "Add a new entry" input field.
+2. Click the "Add" button.
+3. The new entry will be added to the database.
+
+## Update an Entry
+
+1. Enter the index of the entry you want to update in the "Index" input field.
+2. Enter the new value for the entry in the "New entry" input field.
+3. Click the "Update" button.
+4. The specified entry will be updated in the database.
